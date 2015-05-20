@@ -101,6 +101,16 @@ TOTALS      Seek:160  Rotate:965  Transfer:180  Total:1305
 ./disksim.py   -a 10,11,12,13，24,1
 ```
 请回答每个磁盘请求序列的IO访问时间
+```
+REQUESTS ['10', '11', '12', '13', '24', '1']
+Block:  10  Seek:  0  Rotate:105  Transfer: 30  Total: 135
+Block:  11  Seek:  0  Rotate:  0  Transfer: 30  Total:  30
+Block:   1  Seek:  0  Rotate: 30  Transfer: 30  Total:  60
+Block:  12  Seek: 40  Rotate:260  Transfer: 30  Total: 330
+Block:  13  Seek:  0  Rotate:  0  Transfer: 30  Total:  30
+Block:  24  Seek: 40  Rotate:260  Transfer: 30  Total: 330
+TOTALS      Seek: 80  Rotate:655  Transfer:180  Total: 915
+```
 
 ## 问题 3：请执行 SCAN, C-SCAN磁盘调度策略
 
